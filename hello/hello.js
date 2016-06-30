@@ -4,9 +4,9 @@ module.exports = function (RED) {
         RED.nodes.createNode(this, config);
         var node = this;
         this.on('input', function (msg) {
-            msg.payload = "Hello World";
+            msg.payload = "Hello";
             node.send(msg);
         });
     }
-    RED.nodes.registerType("hello-world", HelloWorldNode);
+    RED.nodes.registerType("hello", HelloWorldNode);
 };
